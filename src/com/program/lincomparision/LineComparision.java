@@ -6,13 +6,26 @@ public class LineComparision {
 		double length=Math.sqrt(num);
 		return length;
 		}
-		public static void main(String[] args)
-		{
-			double length=LineComparision.CheckoutLength(12,14,15,1);
-			System.out.println("The Length of The Line is  "+length );
-	
-	
-		}
+	public static void checkEquality() {
+	// CALCULATE LENGTH
+	double length1= CheckoutLength(1,20,5,2);
+	double length= CheckoutLength(12,10,12,1);
+
+	// CHECK THE EQUAL OR UNEQUAL LENGTH
+	if (length==length1) {
+		System.out.println("The Length of The Two Lines is Equal");
 	}
+	else {
+		System.out.println("The Length of The Two Lines is UnEqual");
+	}
+	System.out.println("The Length of The Line is  " + length1 );
+	System.out.println("The Length of The Line is  " + length );
+	}
+	
+	public static void main(String args []) {
+		checkEquality();
+	}
+}
+
 
 
